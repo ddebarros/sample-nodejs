@@ -15,6 +15,12 @@ var lorem = new LoremIpsum({
   }
 });
 
+let count = 0;
+setInterval(() => {
+  console.log(count);
+  count+=1;
+}, 3000);
+
 app.get('/', (req, res) => res.send(lorem.generateParagraphs(7)))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
