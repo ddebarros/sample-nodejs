@@ -1,6 +1,10 @@
 name: sample-nodejs
 services:
 - environment_slug: node-js
+  envs:
+  - key: TEST_KEY
+    scope: RUN_AND_BUILD_TIME
+    value: some_test_value
   github:
     branch: main
     deploy_on_push: true
