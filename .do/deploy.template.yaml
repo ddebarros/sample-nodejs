@@ -13,7 +13,7 @@ spec:
   - domain: testdomain.com
     type: "PRIMARY"
     wildcard: true
- workers:
+  workers:
   - environment_slug: node-js
     git:
       branch: main
