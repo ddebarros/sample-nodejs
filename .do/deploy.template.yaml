@@ -4,7 +4,7 @@ spec:
   - environment_slug: node-js
     git:
       branch: main
-      repo_clone_url: https://github.com/digitalocean/sample-nodejs.git
+      repo_clone_url: https://github.com/ddebarros/sample-nodejs.git
     name: sample-nodejs-server
     run_command: yarn start && true
     source_dir: /
@@ -13,3 +13,12 @@ spec:
   - domain: testdomain.com
     type: "PRIMARY"
     wildcard: true
+ workers:
+  - environment_slug: node-js
+    git:
+      branch: main
+      repo_clone_url: https://github.com/ddebarros/sample-nodejs.git
+    name: sample-nodejs-server
+    build_command: yarn build
+    run_command: yarn start && true
+    source_dir: /workers
