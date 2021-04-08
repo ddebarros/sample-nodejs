@@ -5,7 +5,7 @@ spec:
     git:
       branch: main
       repo_clone_url: https://github.com/digitalocean/sample-nodejs.git
-    name: sample-nodejs
+    name: sample-nodejs-server
     run_command: yarn start && true
     source_dir: /
     internal_ports: [1010, 1020]
