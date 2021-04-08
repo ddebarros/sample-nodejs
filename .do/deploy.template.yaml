@@ -11,5 +11,5 @@ spec:
     internal_ports: [1010, 1020]
   domains:
   - domain: testdomain.com
-    type: DEFAULT
+    type: "PRIMARY"
     wildcard: true
