@@ -7,6 +7,7 @@ spec:
       repo_clone_url: https://github.com/digitalocean/sample-nodejs.git
     name: sample-nodejs
     run_command: yarn start && true
+    source_dir: /
     internal_ports: [1010, 1020]
     routes:
       - path: /public
