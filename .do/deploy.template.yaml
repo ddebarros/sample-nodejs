@@ -18,7 +18,7 @@ spec:
     git:
       branch: main
       repo_clone_url: https://github.com/ddebarros/sample-nodejs.git
-    name: sample-nodejs-server
+    name: sample-nodejs-worker
     build_command: yarn build
     run_command: yarn start && true
     source_dir: /workers
