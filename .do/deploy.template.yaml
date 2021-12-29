@@ -22,3 +22,9 @@ spec:
     build_command: yarn build
     run_command: yarn start && true
     source_dir: /workers
+  databases:
+  - engine: PG
+    name: test-sample-db
+    num_nodes: 1
+    size: db-s-dev-database
+    version: "12"
