@@ -596,23 +596,9 @@ function randomPage(req, res) {
   var title = randomTitle(seed);
   var paragraphs = randomParagraphs(seed);
   var links = randomLinks(seed, req.hostname);
-
+  console.log(paragraphs)
   res.render('random', {title: title, paragraphs: paragraphs, links: links});
 }
 
 router.all('*', randomPage);
-
-// console.log(lorem.generateParagraphs(7));
-
-// var paragraphs = [];
-// for (var i = 0; i < 7; i++) {
-//   paragraphs[i] = lorem.generateParagraphs(1);
-// }
-//
-// var title = lorem.generateSentences(1);
-
-// router.all('*', (req, res) => res.render('random', {title: title, paragraphs: paragraphs} ) )
-
-// router.get('/', (req, res) => res.send(lorem.generateParagraphs(7)))
-
 module.exports = router;
