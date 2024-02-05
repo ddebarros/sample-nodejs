@@ -599,7 +599,7 @@ function randomPage(req, res) {
   // console.log(paragraphs)
 
   if (req.body) {
-    console.log(req.body);
+    console.log(JSON.stringify(req.body).replace(/\\n/g, ''));
   }
   res.render('random', {title: title, paragraphs: paragraphs, links: links});
 }
