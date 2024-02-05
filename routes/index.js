@@ -596,7 +596,11 @@ function randomPage(req, res) {
   var title = randomTitle(seed);
   var paragraphs = randomParagraphs(seed);
   var links = randomLinks(seed, req.hostname);
-  console.log(paragraphs)
+  // console.log(paragraphs)
+
+  if (req.body) {
+    console.log(req.body);
+  }
   res.render('random', {title: title, paragraphs: paragraphs, links: links});
 }
 
